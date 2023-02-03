@@ -9,6 +9,7 @@ Run project locally:
 ```
 make run-dev
 ```
+-----------------------------------------
 
 How it works:
 ```
