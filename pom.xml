@@ -63,7 +63,7 @@
 		<id>local</id>
 		<properties>
 		    <logger.console.tresholdFilter>ALL</logger.console.tresholdFilter>
-		    <logger.socket.tresholdFilter>OFF</logger.socket.tresholdFilter>
+		    <logger.file.tresholdFilter></logger.file.tresholdFilter>
 		</properties>
 	    </profile>
 	</profiles>
