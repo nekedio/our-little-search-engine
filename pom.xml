@@ -66,14 +66,6 @@
 		    <logger.socket.tresholdFilter>OFF</logger.socket.tresholdFilter>
 		</properties>
 	    </profile>
-
-	    <profile>
-		<id>dev</id>
-		<properties>
-		    <logger.console.tresholdFilter>OFF</logger.console.tresholdFilter>
-		    <logger.socket.tresholdFilter>ALL</logger.socket.tresholdFilter>
-		</properties>
-	    </profile>
 	</profiles>
 
 	<build>
