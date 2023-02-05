@@ -15,7 +15,6 @@
 	<description>Our little search engine for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<logstash.host>localhost</logstash.host>
 	</properties>
 	<dependencies>
 		<dependency>    
@@ -63,7 +62,6 @@
 	    <profile>
 		<id>local</id>
 		<properties>
-		    <logstash.port>10000</logstash.port>
 		    <logger.console.tresholdFilter>ALL</logger.console.tresholdFilter>
 		    <logger.socket.tresholdFilter>OFF</logger.socket.tresholdFilter>
 		</properties>
@@ -72,7 +70,6 @@
 	    <profile>
 		<id>dev</id>
 		<properties>
-		    <logstash.port>10001</logstash.port>
 		    <logger.console.tresholdFilter>OFF</logger.console.tresholdFilter>
 		    <logger.socket.tresholdFilter>ALL</logger.socket.tresholdFilter>
 		</properties>
