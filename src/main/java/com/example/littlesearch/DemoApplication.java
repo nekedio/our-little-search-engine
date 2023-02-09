@@ -13,8 +13,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
 
-        logger.info("testing info logging");
-        logger.error("testing error message");
+
     }
 
 }

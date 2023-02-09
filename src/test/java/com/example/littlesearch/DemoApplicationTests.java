@@ -4,6 +4,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.example.littlesearch.config.Site;
+import com.example.littlesearch.config.SitesList;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,4 +30,9 @@ class DemoApplicationTests {
 
     }
 
+    @Test
+    void getSitesList() throws Exception {
+        SitesList sl = new SitesList();
+        for (var s : sl.getSitesList()) System.out.println(s);
+    }
 }
