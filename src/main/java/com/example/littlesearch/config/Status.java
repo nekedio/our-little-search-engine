@@ -1,4 +1,4 @@
-package com.example.littlesearch.models;
+package com.example.littlesearch.config;
 
 public enum Status {
     INDEXING, INDEXED, FAILED
