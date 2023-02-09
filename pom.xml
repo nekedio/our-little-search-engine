@@ -69,7 +69,7 @@
 		<id>local</id>
 		<properties>
 		    <logger.console.tresholdFilter>ALL</logger.console.tresholdFilter>
-		    <logger.file.tresholdFilter></logger.file.tresholdFilter>
+		    <logger.file.tresholdFilter>ALL</logger.file.tresholdFilter>
 		</properties>
 	    </profile>
 	</profiles>
@@ -89,6 +89,12 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 	</build>
 
 </project>

@@ -9,11 +9,8 @@ import lombok.Setter;
 @Getter
 @EqualsAndHashCode
 public class Site {
-
     private String url;
-
     private String name;
-
     @Override
     public String toString() {
         return "Site{" +

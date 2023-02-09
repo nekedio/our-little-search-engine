@@ -6,6 +6,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.example.littlesearch.config.Site;
 import com.example.littlesearch.config.SitesList;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,5 +36,11 @@ class DemoApplicationTests {
     void getSitesList() throws Exception {
         SitesList sl = new SitesList();
         for (var s : sl.getSitesList()) System.out.println(s);
+    }
+
+    @Test
+    void logTest() throws Exception {
+        Logger logger = LogManager.getLogger(DemoApplication.class.getName());
+        logger.error("testing ERROR message log");
     }
 }

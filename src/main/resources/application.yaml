@@ -1,8 +1,18 @@
+logger:
+  console:
+    tresholdFilter: ${logger.console.tresholdFilter}
+
+  file:
+    tresholdFilter: ${logger.file.tresholdFilter}
+
 indexing-settings:
-    sites:
-        - url: https://www.lenta.ru
+    sitesList:
+        -
+          url: https://www.lenta.ru
           name: ?????.??
-        - url: https://www.skillbox.ru
+        -
+          url: https://www.skillbox.ru
           name: Skillbox
-        - url: https://www.playback.ru
+        -
+          url: https://www.playback.ru
           name: Playback.Ru
