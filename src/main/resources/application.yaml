@@ -6,13 +6,8 @@ logger:
     tresholdFilter: ${logger.file.tresholdFilter}
 
 indexing-settings:
-    sitesList:
-        -
-          url: https://www.lenta.ru
-          name: ?????.??
-        -
-          url: https://www.skillbox.ru
-          name: Skillbox
-        -
-          url: https://www.playback.ru
-          name: Playback.Ru
+    sites-list:
+    - url: https://www.skillbox.ru
+      name: Skillbox
+    - url: https://www.playback.ru
+      name: Playback.Ru
