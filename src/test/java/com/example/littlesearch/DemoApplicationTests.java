@@ -44,4 +44,11 @@ class DemoApplicationTests {
         Logger logger = LogManager.getLogger(DemoApplication.class.getName());
         logger.error("testing ERROR message log");
     }
+
+    @Test
+    void sites() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/sites").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.littlesearch;
+package com.example.littlesearch.controllers;
 
 import com.example.littlesearch.config.SitesList;
 import org.springframework.beans.factory.annotation.Autowired;
