@@ -24,6 +24,9 @@ class DemoApplicationTests {
     @Autowired
     private MockMvc mvc;
 
+    @Autowired
+    private SitesList sitesList;
+
     @Test
     void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
@@ -34,8 +37,7 @@ class DemoApplicationTests {
 
     @Test
     void getSitesList() throws Exception {
-        SitesList sl = new SitesList();
-        for (var s : sl.getSitesList()) System.out.println(s);
+        for (var site : sitesList.getSitesList()) System.out.println(site);
     }
 
     @Test

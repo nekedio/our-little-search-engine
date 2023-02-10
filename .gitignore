@@ -33,4 +33,5 @@ build/
 .vscode/
 
 ### nb ###
-nohup.out
+nohup.outlogs/
+logs/
